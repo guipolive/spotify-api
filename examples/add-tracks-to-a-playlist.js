@@ -15,7 +15,7 @@ var {client_id, client_secret} = require('../../secure/app_variables');
 /* This code is hardcoded. For a working implementation, the code needs to be retrieved from the user. See documentation about
  * the Authorization Code flow for more information.
  */
-var authorizationCode = '<insert authorization code>';
+var authorizationCode = 'AQAjRd3Tnd7auQd8ZfAYwCwW2Ma7eJ6thrkmECaNuem8s_yxXCSv8qgsZINc1oi1CZGagfbxIiXR2ci9_J9a7_CwEaVCxsIID9rsC087i9PL5IuIESpFf_ZWBxOAJ5xfdkVFfO3kTVX0aFoZ09ygs2BUtn7dbKnABMstBxkhq_VvfaXKDdze6C1f8WVcQtIufsxMq_TwArTM2lsf0aJfrbGWOIokUatf3dG9t3_k1AA';
 
 /**
  * Set the credentials given on Spotify's My Applications page.
@@ -24,7 +24,7 @@ var authorizationCode = '<insert authorization code>';
 var spotifyApi = new SpotifyWebApi({
   clientId: client_id,
   clientSecret: client_secret,
-  redirectUri: '<insert redirect URI>'
+  redirectUri: 'http://localhost:8888/'
 });
 
 // First retrieve an access token

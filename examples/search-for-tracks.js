@@ -11,7 +11,7 @@ var {client_id, client_secret} = require('../../secure/app_variables');
  * Obtain the `authorizationCode` below as described in the Authorization section of the README.
  */
 
-const authorizationCode = 'AQAPmdt2E599f5IApDv6fF0pkBkdddrrY2CklNRjUp2Gmc3pkR-xuRc9BuCu1bcP_t-HTlX8HYpnvt-c6KNP9JfedPyMsXpvRuRGV0VlUWzeg1PXNIP4gJsLAyUWkPKjHjXGlEZprJFDKenktqDvW2bXzuFtmAA5e_sooLWJlD_VEx4wOIr5B4o5m_d4xmc69-qrN-BlRKLiPczHIoUbZXDvW1sKoocDCeCNDUYiAeg';
+const authorizationCode = 'BQB6FYUXE1ChyKP3UhrhNWoZPuVpcoIQWal8XxablNiOuBEXuvauMTYB8j9ZwXRFmwmD8F1dVnCUhsgsr6lh2lWzX3bpHxcp9oWI746RMC78uRzDya_EV60V7bhRygcLdmlI65M';
 
 /**
  * Get the credentials from Spotify's Dashboard page.

@@ -14,7 +14,7 @@ var {client_id, client_secret} = require('../../secure/app_variables');
  * https://developer.spotify.com/spotify-web-api/using-scopes/
  */
 var authorizationCode =
-  'AQAgjS78s64u1axMCBCRA0cViW_ZDDU0pbgENJ_-WpZr3cEO7V5O-JELcEPU6pGLPp08SfO3dnHmu6XJikKqrU8LX9W6J11NyoaetrXtZFW-Y58UGeV69tuyybcNUS2u6eyup1EgzbTEx4LqrP_eCHsc9xHJ0JUzEhi7xcqzQG70roE4WKM_YrlDZO-e7GDRMqunS9RMoSwF_ov-gOMpvy9OMb7O58nZoc3LSEdEwoZPCLU4N4TTJ-IF6YsQRhQkEOJK';
+  'BQACe6WYiRxtrIwA00BpfbKKlS_rnjtbn1VDYWYElUflKbFnnUELjWslbN2z6OleSzAsSiMpd1dznyQkY9cc1JOmrBpU_SL52PZKRuPIlgzHAzlEJM4Nkt1tu_BAUNPZCFz7Rl8';
 
 /**
  * Set the credentials given on Spotify's My Applications page.
@@ -23,7 +23,7 @@ var authorizationCode =
 var spotifyApi = new SpotifyWebApi({
   clientId: client_id,
   clientSecret: client_secret,
-  redirectUri: '<insert redirect URI>'
+  redirectUri: 'google.com'
 });
 
 // When our access token will expire

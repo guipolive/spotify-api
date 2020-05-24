@@ -1,3 +1,4 @@
+var {client_id, client_secret} = require('../../secure/app_variables');
 /**
  * This is an example of a basic node.js script that performs
  * the Authorization Code oAuth2 flow to authenticate against
