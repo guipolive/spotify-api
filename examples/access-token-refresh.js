@@ -14,7 +14,7 @@ var {client_id, client_secret} = require('../../secure/app_variables');
  * https://developer.spotify.com/spotify-web-api/using-scopes/
  */
 var authorizationCode =
-  'BQACe6WYiRxtrIwA00BpfbKKlS_rnjtbn1VDYWYElUflKbFnnUELjWslbN2z6OleSzAsSiMpd1dznyQkY9cc1JOmrBpU_SL52PZKRuPIlgzHAzlEJM4Nkt1tu_BAUNPZCFz7Rl8';
+  'AQBZrIZrmOc3PyNG25RFg7TBaD4E1gD2QErfIn2H_BRVdnQWKYSO7ZePY3yyyHSfJpaUQRbSxUs6Mt_8U5rg-JaKdaZKNY3fAe1lx4CCB1DRfzoHY5-rFdI_pY1XjnINwqwVqZ1cOQoJRWsMEmV8ooew7ZoFGXynuB8D9SvLftZx-2H8C4NhtnAZyInTfbEagYj3rGgO7LOJmZeA_Js7fjBM-ETpHMQ9ss1gzTz8GgI';
 
 /**
  * Set the credentials given on Spotify's My Applications page.

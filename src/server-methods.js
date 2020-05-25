@@ -41,13 +41,24 @@ module.exports = {
    */
   authorizationCodeGrant: function(code, callback) {
     return AuthenticationRequest.builder()
+      // .withPath('/authorize')
       .withPath('/api/token')
       .withBodyParameters({
         grant_type: 'authorization_code',
-        redirect_uri: this.getRedirectURI(),
         code: code,
+        redirect_uri: this.getRedirectURI(),
         client_id: this.getClientId(),
         client_secret: this.getClientSecret()
+
+
+        /* meu teste */
+        // client_id: this.getClientId(),
+        // response_type: code,
+        // redirect_uri: this.getRedirectURI(),
+
+        // grant_type: 'authorization_code',
+        // client_secret: this.getClientSecret(),
+
       })
       .build()
       .execute(HttpManager.post, callback);

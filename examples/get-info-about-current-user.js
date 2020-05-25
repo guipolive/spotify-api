@@ -50,6 +50,7 @@ spotifyApi
     // "This user has a premium account"
     console.log('This user has a ' + data.body.product + ' account');
   })
+  
   .catch(function(err) {
     console.log('Something went wrong', err.message);
   });

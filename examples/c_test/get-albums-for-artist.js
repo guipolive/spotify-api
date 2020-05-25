@@ -1,23 +1,11 @@
-var SpotifyWebApi = require('../src/server');
-var {client_id, client_secret} = require('../../secure/app_variables');
+var SpotifyWebApi = require('../../src/server.js');
+var {client_id, client_secret} = require('../../../secure/app_variables');
 
-/**
- * This example retrives an access token using the Client Credentials Flow. It's well documented here:
- * https://developer.spotify.com/web-api/authorization-guide/#client_credentials_flow
- */
-
-/*
- * https://developer.spotify.com/spotify-web-api/using-scopes/
- */
-
-/**
- * Set the credentials given on Spotify's My Applications page.
- * https://developer.spotify.com/my-applications
- */
+/* This example retrives the tracks of an album. */
 
 var spotifyApi = new SpotifyWebApi({
   clientId: client_id,
-  clientSecret: client_secret
+  clientSecret: client_secret,
 });
 
 const artistID = '0oSGxfWSnnOXhD2fKuz2Gy';
@@ -48,6 +36,6 @@ spotifyApi
     data.body.items.forEach((album, index) => {
         console.log(index + 1 + '. ' + album.name + ': ' + album.external_urls.spotify);
     })
-}
+})
 
-)
+.catch(error => console.log(error));
